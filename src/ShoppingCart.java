@@ -52,7 +52,12 @@ public class ShoppingCart implements ShoppingCartInterface{
 
     @Override
     public void ForgetItem(int itemId) {
-        cartItems.remove(itemId);
+        for (Iterator<Item> iterator = cartItems.iterator(); iterator.hasNext();) {
+            Item item = iterator.next();
+            if (item.getItemId() == itemId) {
+                iterator.remove();
+            }
+        }
     }
 
     @Override
