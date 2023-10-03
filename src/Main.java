@@ -10,7 +10,7 @@ public static void main(String[] args){
     cart.AddItemToCart(item3);
 
     System.out.println(cart.GetAllItems());
-    cart.RemoveItem(1);
+    cart.ForgetItem(1);
 
     System.out.println(cart.GetAllItems());
 }

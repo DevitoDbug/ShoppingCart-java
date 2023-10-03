@@ -42,7 +42,12 @@ public class ShoppingCart implements ShoppingCartInterface{
 
     @Override
     public void RestoreItem(int itemId) {
-        cartItems.get(itemId).setDeleted(false);
+        for (Iterator<Item> iterator = cartItems.iterator(); iterator.hasNext();) {
+            Item item = iterator.next();
+            if (item.getItemId() == itemId) {
+                item.setDeleted(false);
+            }
+        }
     }
 
     @Override
