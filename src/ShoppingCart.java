@@ -9,6 +9,17 @@ public class ShoppingCart implements ShoppingCartInterface{
     }
 
     @Override
+    public List<Item> GetAllItems() {
+        List<Item> allItems = new ArrayList<>() ;
+        cartItems.forEach(item -> {
+            if (!item.getDeleted()){
+                allItems.add(item);
+            }
+        });
+        return allItems;
+    }
+
+    @Override
     public void AddItemToCart(Item item) {
         if (this.cartItems == null){
             item.setItemId(1);

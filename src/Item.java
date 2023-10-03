@@ -50,4 +50,10 @@ public class Item {
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
+
+    @Override
+    public String toString() {
+        return "(Item: " + name + ", ID: " + itemId + ", Price: " + price + ", Quantity: " + quantity+")";
+    }
+
 }

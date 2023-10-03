@@ -9,6 +9,7 @@
       <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShoppingCartInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShoppingCartInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

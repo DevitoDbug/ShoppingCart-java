@@ -9,6 +9,9 @@ public static void main(String[] args){
     cart.AddItemToCart(item2);
     cart.AddItemToCart(item3);
 
-    System.out.print();
+    System.out.println(cart.GetAllItems());
+    cart.RemoveItem(1);
+
+    System.out.println(cart.GetAllItems());
 }
 }
