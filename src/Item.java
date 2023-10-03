@@ -5,8 +5,7 @@ public class Item {
     private int quantity;
     private boolean deleted = false ;
 
-    Item(int itemsId , String name , double price , int quantity){
-        this.itemId = itemsId;
+    Item(String name , double price , int quantity){
         this.name = name;
         this.price = price;
         this.quantity = quantity;

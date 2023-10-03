@@ -1,15 +1,21 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class ShoppingCart implements ShoppingCartInterface{
     private List<Item> cartItems;
 
-    ShoppingCart(List<Item> cartItems){
-        this.cartItems = cartItems;
+    ShoppingCart(){
+        this.cartItems = new ArrayList<>();
     }
 
     @Override
     public void AddItemToCart(Item item) {
-        cartItems.add(item);
+        if (this.cartItems == null){
+            item.setItemId(1);
+        }else{
+            item.setItemId(this.cartItems.size()+1);//Setting the item id
+        }
+        this.cartItems.add(item);
     }
 
     @Override
@@ -30,6 +36,7 @@ public class ShoppingCart implements ShoppingCartInterface{
     @Override
     public double TotalPrice() {
         int totalPrice = 0;
+        if (this.cartItems != null)
         for(int i = 0 ; i < cartItems.size() ; i++){
             totalPrice += cartItems.get(i).getPrice();
         }
