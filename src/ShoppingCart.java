@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ShoppingCart implements ShoppingCartInterface{
@@ -31,7 +32,12 @@ public class ShoppingCart implements ShoppingCartInterface{
 
     @Override
     public void RemoveItem(int itemId) {
-        cartItems.get(itemId).setDeleted(true);
+        for (Iterator<Item> iterator = cartItems.iterator(); iterator.hasNext();) {
+            Item item = iterator.next();
+            if (item.getItemId() == itemId) {
+                item.setDeleted(true);
+            }
+        }
     }
 
     @Override
