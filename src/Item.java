@@ -3,12 +3,21 @@ public class Item {
     private String name;
     private double price;
     private int quantity;
+    private boolean deleted = false ;
 
     Item(int itemsId , String name , double price , int quantity){
         this.itemId = itemsId;
         this.name = name;
         this.price = price;
         this.quantity = quantity;
+    }
+
+    public void setDeleted(boolean delete){
+        deleted = delete;
+    }
+
+    public boolean getDeleted(){
+        return deleted;
     }
 
     public int getItemId() {

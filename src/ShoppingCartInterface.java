@@ -1,7 +1,8 @@
 public interface ShoppingCartInterface {
-    void AddItem(Item item);
+    void AddItemToCart(Item item);
     void RemoveItem(int itemId);
-    void RestoreItem();
+    void RestoreItem(int itemId);
+    void ForgetItem(int itemId);
     double TotalPrice();
-    int Quantity();
+    int NumberOfItems();
 }

@@ -1,7 +1,6 @@
 import java.util.List;
 
 public class ShoppingCart implements ShoppingCartInterface{
-    private int NumberOfItems ;
     private List<Item> cartItems;
 
     ShoppingCart(List<Item> cartItems){
@@ -9,18 +8,23 @@ public class ShoppingCart implements ShoppingCartInterface{
     }
 
     @Override
-    public void AddItem(Item item) {
-
+    public void AddItemToCart(Item item) {
+        cartItems.add(item);
     }
 
     @Override
     public void RemoveItem(int itemId) {
-
+        cartItems.get(itemId).setDeleted(true);
     }
 
     @Override
-    public void RestoreItem() {
+    public void RestoreItem(int itemId) {
+        cartItems.get(itemId).setDeleted(false);
+    }
 
+    @Override
+    public void ForgetItem(int itemId) {
+        cartItems.remove(itemId);
     }
 
     @Override
@@ -33,7 +37,7 @@ public class ShoppingCart implements ShoppingCartInterface{
     }
 
     @Override
-    public int Quantity() {
-        return 0;
+    public int NumberOfItems() {
+        return cartItems.size();
     }
 }
