@@ -6,6 +6,12 @@ class ShoppingCartTest {
 
     @Test
     void getAllItems() {
+        var item = new Item("Milk", 6700 , 10);
+        var cart = new ShoppingCart();
+        cart.AddItemToCart(item);
+        var list = cart.GetAllItems();
+
+        assertFalse(list.isEmpty());
     }
 
     @Test
