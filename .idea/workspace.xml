@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="815e6ced-a48f-4024-a16e-182fa0d09c93" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoppingCart_java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCart_java.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/ShoppingCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ShoppingCartTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,19 +58,22 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ShoppingCartTest.getAllItems">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="shoppingCart_java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ShoppingCartTest.removeItemShouldReduceCartListSizeByOne">
     <configuration name="ShoppingCartTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shoppingCart_java" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ShoppingCartTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShoppingCartTest.addItemToCartShouldResultInCartNotBeingEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shoppingCart_java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ShoppingCartTest" />
+      <option name="METHOD_NAME" value="addItemToCartShouldResultInCartNotBeingEmpty" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -86,11 +88,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShoppingCartTest.getAllItemsWithTwoItemsShouldReturnTwoItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shoppingCart_java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ShoppingCartTest" />
+      <option name="METHOD_NAME" value="getAllItemsWithTwoItemsShouldReturnTwoItems" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShoppingCartTest.removeItemShouldReduceCartListSizeByOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shoppingCart_java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ShoppingCartTest" />
+      <option name="METHOD_NAME" value="removeItemShouldReduceCartListSizeByOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ShoppingCartTest.removeItemShouldReduceCartListSizeByOne" />
+        <item itemvalue="JUnit.ShoppingCartTest.addItemToCartShouldResultInCartNotBeingEmpty" />
+        <item itemvalue="JUnit.ShoppingCartTest.getAllItemsWithTwoItemsShouldReturnTwoItems" />
         <item itemvalue="JUnit.ShoppingCartTest.getAllItems" />
         <item itemvalue="JUnit.ShoppingCartTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
