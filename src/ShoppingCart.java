@@ -65,13 +65,17 @@ public class ShoppingCart implements ShoppingCartInterface{
         int totalPrice = 0;
         if (this.cartItems != null)
         for(int i = 0 ; i < cartItems.size() ; i++){
-            totalPrice += cartItems.get(i).getPrice();
+            totalPrice += cartItems.get(i).getPrice()*cartItems.get(i).getQuantity();
         }
         return totalPrice;
     }
 
     @Override
     public int NumberOfItems() {
-        return cartItems.size();
+        var numberOfItems = 0;
+        for (int i = 0 ; i < cartItems.size() ; i ++){
+            numberOfItems += cartItems.get(i).getQuantity();
+        }
+        return numberOfItems;
     }
 }

@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="815e6ced-a48f-4024-a16e-182fa0d09c93" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShoppingCart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/ShoppingCartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ShoppingCartTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,52 +59,51 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ShoppingCartTest.forgetItemShouldNotBeRestorable">
-    <configuration name="ShoppingCartTest.forgetItemShouldNotBeRestorable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ShoppingCartTest">
+    <configuration name="ShoppingCartTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shoppingCart_java" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ShoppingCartTest" />
-      <option name="METHOD_NAME" value="forgetItemShouldNotBeRestorable" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShoppingCartTest.numberOfItemsForTwoItemsEachQuantityTwoShouldBeFour" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shoppingCart_java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ShoppingCartTest" />
+      <option name="METHOD_NAME" value="numberOfItemsForTwoItemsEachQuantityTwoShouldBeFour" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShoppingCartTest.forgetItemShouldRemoveItemFromList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShoppingCartTest.numberOfItemsForTwoItemsQuantityTwoAndFourShouldBeSix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shoppingCart_java" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ShoppingCartTest" />
-      <option name="METHOD_NAME" value="forgetItemShouldRemoveItemFromList" />
+      <option name="METHOD_NAME" value="numberOfItemsForTwoItemsQuantityTwoAndFourShouldBeSix" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShoppingCartTest.removeItemShouldNotBeInCart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShoppingCartTest.numberOfItemsForTwoItemsShouldBeTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shoppingCart_java" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ShoppingCartTest" />
-      <option name="METHOD_NAME" value="removeItemShouldNotBeInCart" />
+      <option name="METHOD_NAME" value="numberOfItemsForTwoItemsShouldBeTwo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShoppingCartTest.removeItemShouldReduceCartListSizeByOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShoppingCartTest.numberOfItemsForZeroItemsShouldBeZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shoppingCart_java" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ShoppingCartTest" />
-      <option name="METHOD_NAME" value="removeItemShouldReduceCartListSizeByOne" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShoppingCartTest.restoreItemShouldBeInTheCartList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="shoppingCart_java" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ShoppingCartTest" />
-      <option name="METHOD_NAME" value="restoreItemShouldBeInTheCartList" />
+      <option name="METHOD_NAME" value="numberOfItemsForZeroItemsShouldBeZero" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -111,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ShoppingCartTest.forgetItemShouldNotBeRestorable" />
-        <item itemvalue="JUnit.ShoppingCartTest.forgetItemShouldRemoveItemFromList" />
-        <item itemvalue="JUnit.ShoppingCartTest.restoreItemShouldBeInTheCartList" />
-        <item itemvalue="JUnit.ShoppingCartTest.removeItemShouldNotBeInCart" />
-        <item itemvalue="JUnit.ShoppingCartTest.removeItemShouldReduceCartListSizeByOne" />
+        <item itemvalue="JUnit.ShoppingCartTest" />
+        <item itemvalue="JUnit.ShoppingCartTest.numberOfItemsForZeroItemsShouldBeZero" />
+        <item itemvalue="JUnit.ShoppingCartTest.numberOfItemsForTwoItemsQuantityTwoAndFourShouldBeSix" />
+        <item itemvalue="JUnit.ShoppingCartTest.numberOfItemsForTwoItemsEachQuantityTwoShouldBeFour" />
+        <item itemvalue="JUnit.ShoppingCartTest.numberOfItemsForTwoItemsShouldBeTwo" />
       </list>
     </recent_temporary>
   </component>
