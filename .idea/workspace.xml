@@ -58,41 +58,32 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ShoppingCartTest.removeItemShouldReduceCartListSizeByOne">
-    <configuration name="ShoppingCartTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ShoppingCartTest.forgetItemShouldNotBeRestorable">
+    <configuration name="ShoppingCartTest.forgetItemShouldNotBeRestorable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shoppingCart_java" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ShoppingCartTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShoppingCartTest.addItemToCartShouldResultInCartNotBeingEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="shoppingCart_java" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ShoppingCartTest" />
-      <option name="METHOD_NAME" value="addItemToCartShouldResultInCartNotBeingEmpty" />
+      <option name="METHOD_NAME" value="forgetItemShouldNotBeRestorable" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShoppingCartTest.getAllItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShoppingCartTest.forgetItemShouldRemoveItemFromList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shoppingCart_java" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ShoppingCartTest" />
-      <option name="METHOD_NAME" value="getAllItems" />
+      <option name="METHOD_NAME" value="forgetItemShouldRemoveItemFromList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShoppingCartTest.getAllItemsWithTwoItemsShouldReturnTwoItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShoppingCartTest.removeItemShouldNotBeInCart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shoppingCart_java" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ShoppingCartTest" />
-      <option name="METHOD_NAME" value="getAllItemsWithTwoItemsShouldReturnTwoItems" />
+      <option name="METHOD_NAME" value="removeItemShouldNotBeInCart" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -108,13 +99,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShoppingCartTest.restoreItemShouldBeInTheCartList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shoppingCart_java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ShoppingCartTest" />
+      <option name="METHOD_NAME" value="restoreItemShouldBeInTheCartList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ShoppingCartTest.forgetItemShouldNotBeRestorable" />
+        <item itemvalue="JUnit.ShoppingCartTest.forgetItemShouldRemoveItemFromList" />
+        <item itemvalue="JUnit.ShoppingCartTest.restoreItemShouldBeInTheCartList" />
+        <item itemvalue="JUnit.ShoppingCartTest.removeItemShouldNotBeInCart" />
         <item itemvalue="JUnit.ShoppingCartTest.removeItemShouldReduceCartListSizeByOne" />
-        <item itemvalue="JUnit.ShoppingCartTest.addItemToCartShouldResultInCartNotBeingEmpty" />
-        <item itemvalue="JUnit.ShoppingCartTest.getAllItemsWithTwoItemsShouldReturnTwoItems" />
-        <item itemvalue="JUnit.ShoppingCartTest.getAllItems" />
-        <item itemvalue="JUnit.ShoppingCartTest" />
       </list>
     </recent_temporary>
   </component>

@@ -53,11 +53,62 @@ class ShoppingCartTest {
     }
 
     @Test
-    void restoreItem() {
+    void removeItemShouldNotBeInCart() {
+        var item1 = new Item("Milk", 6700 , 10);
+        var item2 = new Item("Clothes", 80 , 10);
+
+        var cart = new ShoppingCart();
+        cart.AddItemToCart(item1);
+        cart.AddItemToCart(item2);
+        cart.RemoveItem(item1.getItemId());
+        var list = cart.GetAllItems();
+
+        assertFalse(list.contains(item1));
+    }
+
+
+    @Test
+    void restoreItemShouldBeInTheCartList() {
+        var item1 = new Item("Milk", 6700 , 10);
+        var item2 = new Item("Clothes", 80 , 10);
+
+        var cart = new ShoppingCart();
+        cart.AddItemToCart(item1);
+        cart.AddItemToCart(item2);
+        cart.RemoveItem(item1.getItemId());
+        cart.RestoreItem(item1.getItemId());
+        var list = cart.GetAllItems();
+
+        assertTrue(list.contains(item1));
     }
 
     @Test
-    void forgetItem() {
+    void forgetItemShouldRemoveItemFromList() {
+        var item1 = new Item("Milk", 6700 , 10);
+        var item2 = new Item("Clothes", 80 , 10);
+
+        var cart = new ShoppingCart();
+        cart.AddItemToCart(item1);
+        cart.AddItemToCart(item2);
+        cart.ForgetItem(item1.getItemId());
+        var list = cart.GetAllItems();
+
+        assertFalse(list.contains(item1));
+    }
+
+    @Test
+    void forgetItemShouldNotBeRestorable() {
+        var item1 = new Item("Milk", 6700 , 10);
+        var item2 = new Item("Clothes", 80 , 10);
+
+        var cart = new ShoppingCart();
+        cart.AddItemToCart(item1);
+        cart.AddItemToCart(item2);
+        cart.ForgetItem(item1.getItemId());
+        cart.RestoreItem(item1.getItemId());
+        var list = cart.GetAllItems();
+
+        assertFalse(list.contains(item1));
     }
 
     @Test
