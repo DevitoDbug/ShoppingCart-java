@@ -6,8 +6,8 @@ class ShoppingCartTest {
 
     @Test
     void getAllItemsShouldNotReturnEmptyList() {
-        var item = new Item("Milk", 6700 , 10);
         var cart = new ShoppingCart();
+        var item = cart.CreateItem("Milk", 6700 , 10);
         cart.AddItemToCart(item);
         var list = cart.GetAllItems();
 
@@ -16,10 +16,10 @@ class ShoppingCartTest {
 
     @Test
     void getAllItemsWithTwoItemsShouldReturnListWithTwoItems() {
-        var item1 = new Item("Milk", 6700 , 10);
-        var item2 = new Item("Clothes", 80 , 10);
-
         var cart = new ShoppingCart();
+        var item1 = cart.CreateItem("Milk", 6700 , 10);
+        var item2 = cart.CreateItem("Clothes", 80 , 10);
+
         cart.AddItemToCart(item1);
         cart.AddItemToCart(item2);
         var list = cart.GetAllItems();
@@ -29,9 +29,9 @@ class ShoppingCartTest {
 
     @Test
     void addItemToCartShouldResultInCartNotBeingEmpty() {
-        var item1 = new Item("Milk", 6700 , 10);
-
         var cart = new ShoppingCart();
+        var item1 = cart.CreateItem("Milk", 6700 , 10);
+
         cart.AddItemToCart(item1);
         var list = cart.GetAllItems();
 
@@ -40,10 +40,10 @@ class ShoppingCartTest {
 
     @Test
     void removeItemShouldReduceCartListSizeByOne() {
-        var item1 = new Item("Milk", 6700 , 10);
-        var item2 = new Item("Clothes", 80 , 10);
-
         var cart = new ShoppingCart();
+        var item1 = cart.CreateItem("Milk", 6700 , 10);
+        var item2 = cart.CreateItem("Clothes", 80 , 10);
+
         cart.AddItemToCart(item1);
         cart.AddItemToCart(item2);
         cart.RemoveItem(item1.getItemId());
@@ -54,10 +54,10 @@ class ShoppingCartTest {
 
     @Test
     void removeItemShouldNotBeInCart() {
-        var item1 = new Item("Milk", 6700 , 10);
-        var item2 = new Item("Clothes", 80 , 10);
-
         var cart = new ShoppingCart();
+        var item1 = cart.CreateItem("Milk", 6700 , 10);
+        var item2 = cart.CreateItem("Clothes", 80 , 10);
+
         cart.AddItemToCart(item1);
         cart.AddItemToCart(item2);
         cart.RemoveItem(item1.getItemId());
@@ -69,10 +69,10 @@ class ShoppingCartTest {
 
     @Test
     void restoreItemShouldBeInTheCartList() {
-        var item1 = new Item("Milk", 6700 , 10);
-        var item2 = new Item("Clothes", 80 , 10);
-
         var cart = new ShoppingCart();
+        var item1 = cart.CreateItem("Milk", 6700 , 10);
+        var item2 = cart.CreateItem("Clothes", 80 , 10);
+
         cart.AddItemToCart(item1);
         cart.AddItemToCart(item2);
         cart.RemoveItem(item1.getItemId());
@@ -84,10 +84,10 @@ class ShoppingCartTest {
 
     @Test
     void forgetItemShouldRemoveItemFromList() {
-        var item1 = new Item("Milk", 6700 , 10);
-        var item2 = new Item("Clothes", 80 , 10);
-
         var cart = new ShoppingCart();
+        var item1 = cart.CreateItem("Milk", 6700 , 10);
+        var item2 = cart.CreateItem("Clothes", 80 , 10);
+
         cart.AddItemToCart(item1);
         cart.AddItemToCart(item2);
         cart.ForgetItem(item1.getItemId());
@@ -98,10 +98,10 @@ class ShoppingCartTest {
 
     @Test
     void forgetItemShouldNotBeRestorable() {
-        var item1 = new Item("Milk", 6700 , 10);
-        var item2 = new Item("Clothes", 80 , 10);
-
         var cart = new ShoppingCart();
+        var item1 = cart.CreateItem("Milk", 6700 , 10);
+        var item2 = cart.CreateItem("Clothes", 80 , 10);
+
         cart.AddItemToCart(item1);
         cart.AddItemToCart(item2);
         cart.ForgetItem(item1.getItemId());
@@ -113,8 +113,8 @@ class ShoppingCartTest {
 
     @Test
     void totalPriceForTenItemsEachSixtyShouldBeSixHundred() {
-        var item = new Item("Milk", 60 , 10);
         var cart = new ShoppingCart();
+        var item = cart.CreateItem("Milk", 60 , 10);
         cart.AddItemToCart(item);
         var total = cart.TotalPrice();
 
@@ -123,22 +123,21 @@ class ShoppingCartTest {
 
     @Test
     void totalPriceForTwoItemsEachSixtyAndQuantityEachOneShouldBeOneTwenty() {
-        var item1 = new Item("Milk", 60 , 1);
-        var item2 = new Item("Clothes", 60 , 1);
-
         var cart = new ShoppingCart();
+        var item1 = cart.CreateItem("Milk", 60 , 1);
+        var item2 = cart.CreateItem("Clothes", 60 , 1);
+
         cart.AddItemToCart(item1);
         cart.AddItemToCart(item2);
         var total = cart.TotalPrice();
 
         assertEquals(120, total);
     }
-    @Test
-    void totalPriceForTwoItemsTenAndSixtyAndTwoAndOneQuantityShouldBeEighty() {
-        var item1 = new Item("Milk", 10 , 2);
-        var item2 = new Item("Clothes", 60 , 1);
-
+    @Test void totalPriceForTwoItemsTenAndSixtyAndTwoAndOneQuantityShouldBeEighty() {
         var cart = new ShoppingCart();
+        var item1 = cart.CreateItem("Milk", 10 , 2);
+        var item2 = cart.CreateItem("Clothes", 60 , 1);
+
         cart.AddItemToCart(item1);
         cart.AddItemToCart(item2);
         var total = cart.TotalPrice();
@@ -163,10 +162,10 @@ class ShoppingCartTest {
     }
     @Test
     void numberOfItemsForTwoItemsShouldBeTwo() {
-        var item1 = new Item("Milk", 10 , 1);
-        var item2 = new Item("Clothes", 60 , 1);
-
         var cart = new ShoppingCart();
+        var item1 = cart.CreateItem("Milk", 10 , 1);
+        var item2 = cart.CreateItem("Clothes", 60 , 1);
+
         cart.AddItemToCart(item1);
         cart.AddItemToCart(item2);
         var numberOfItems = cart.NumberOfItems();
@@ -176,10 +175,10 @@ class ShoppingCartTest {
 
     @Test
     void numberOfItemsForTwoItemsEachQuantityTwoShouldBeFour() {
-        var item1 = new Item("Milk", 10 , 2);
-        var item2 = new Item("Clothes", 60 , 2);
-
         var cart = new ShoppingCart();
+        var item1 =cart.CreateItem("Milk", 10 , 2);
+        var item2 =cart.CreateItem("Clothes", 60 , 2);
+
         cart.AddItemToCart(item1);
         cart.AddItemToCart(item2);
         var numberOfItems = cart.NumberOfItems();
@@ -188,10 +187,10 @@ class ShoppingCartTest {
     }
     @Test
     void numberOfItemsForTwoItemsQuantityTwoAndFourShouldBeSix() {
-        var item1 = new Item("Milk", 10 , 2);
-        var item2 = new Item("Clothes", 60 , 4);
-
         var cart = new ShoppingCart();
+        var item1 = cart.CreateItem("Milk", 10 , 2);
+        var item2 = cart.CreateItem("Clothes", 60 , 4);
+
         cart.AddItemToCart(item1);
         cart.AddItemToCart(item2);
         var numberOfItems = cart.NumberOfItems();

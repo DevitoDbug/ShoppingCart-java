@@ -8,4 +8,5 @@ public interface ShoppingCartInterface {
     void ForgetItem(int itemId);
     double TotalPrice();
     int NumberOfItems();
+    Item CreateItem(String name  , double price , int quantity);
 }

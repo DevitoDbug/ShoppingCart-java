@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class ShoppingCart implements ShoppingCartInterface{
+public class ShoppingCart implements ShoppingCartInterface {
     private List<Item> cartItems;
 
     ShoppingCart(){
@@ -77,5 +77,11 @@ public class ShoppingCart implements ShoppingCartInterface{
             numberOfItems += cartItems.get(i).getQuantity();
         }
         return numberOfItems;
+    }
+
+    @Override
+    public Item CreateItem(String name  , double price , int quantity) {
+        var item = Item.CreateItemInstance(name , price , quantity);
+        return item;
     }
 }
