@@ -5,6 +5,7 @@ public class Item {
     private int quantity;
     private boolean deleted = false ;
 
+    
     private Item(String name , double price , int quantity){
         this.name = name;
         this.price = price;
@@ -55,6 +56,7 @@ public class Item {
         this.quantity = quantity;
     }
 
+    
     @Override
     public String toString() {
         return "(Item: " + name + ", ID: " + itemId + ", Price: " + price + ", Quantity: " + quantity+")";
